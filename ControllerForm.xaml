@@ -1,0 +1,31 @@
+﻿<Window x:Class="Diplom.ControllerForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ControllerForm" Height="300" Width="500" Icon="Resources/arduino-uno-r3.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="ButtonOk" Content="OK" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Width="75" Background="#FF00C800" Click="ButtonOk_Click"/>
+        <Button Name="ButtonCancel" IsCancel="True" Content="Cancel" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Center" Width="75" Background="#FFC80000" />
+        <Label Content="Номер контроллера" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,-0.269"/>
+        <Label Content="Тип контроллера" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="IP-адрес" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Трансформатор" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox Name="ConNumber" Grid.Column="1" HorizontalAlignment="Center" Height="23" VerticalAlignment="Center" Width="120"/>
+        <TextBox Name="ConType" Grid.Column="1" HorizontalAlignment="Center" Height="23" Grid.Row="1" VerticalAlignment="Center" Width="120"/>
+        <TextBox Name="ConIp" Grid.Column="1" HorizontalAlignment="Center" Height="23" Grid.Row="2" VerticalAlignment="Center" Width="120"/>
+        <TextBox Name="ConTransformer" Grid.Column="1" HorizontalAlignment="Center" Height="23" Grid.Row="3" VerticalAlignment="Center" Width="120"/>
+        <Image Grid.Column="2" HorizontalAlignment="Center" Height="Auto" Grid.RowSpan="4" VerticalAlignment="Stretch" Width="Auto" Source="Resources/arduino-uno-r3.png">
+        </Image>
+    </Grid>
+</Window>
