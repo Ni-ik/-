@@ -1,0 +1,25 @@
+﻿<Window x:Class="Diplom.SubstationForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SubstationForm" Height="300" Width="400" Icon="Resources/tower.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="ButtonOk" Content="OK" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Width="75" Background="#FF00C800" Click="ButtonOk_Click"/>
+        <Button Name="ButtonCancel" IsCancel="True" Content="Cancel" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Center" Width="75" Background="#FFC80000" />
+        <Label Content="Номер подстанции" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,-0.269"/>
+        <Label Content="Адрес подстанции" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox Name="SubNumber" Grid.Column="1" HorizontalAlignment="Center" Height="23" VerticalAlignment="Center" Width="120"/>
+        <TextBox Name="SubAdress" Grid.Column="1" HorizontalAlignment="Center" Height="47" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <Image Grid.Column="2" HorizontalAlignment="Stretch" Height="Auto" Grid.RowSpan="3" VerticalAlignment="Stretch" Width="Auto" Source="Resources/tower.png"/>
+    </Grid>
+</Window>
